@@ -1,0 +1,24 @@
+<!doctypehtml>
+<html>
+<head>
+<title>Table</title>
+</head>
+<body>
+<h3><mark>To create Tables and using colspan attribute</mark></h3>
+<table border="2">
+<tr><th>Name</th><th>Age</th><th>Qualification</th>
+</tr>
+<tr><td>chebrolu sai kiran</td><td>24 years</td><td>Btech in Mechanical engineering</td></tr>
+<tr><td>chebrolu sai kiran</td><td>24 years</td><td>Btech in Mechanical engineering</td></tr>
+<tr><td>chebrolu sai kiran</td><td>24 years</td><td>Btech in Mechanical engineering</td></tr>
+<tr><td>chebrolu sai kiran</td><td>24 years</td><td>Btech in Mechanical engineering</td></tr>
+<tr><td>chebrolu sai kiran</td><td>24 years</td><td>Btech in Mechanical engineering</td></tr>
+<tr><td>chebrolu sai kiran</td><td>24 years</td><td>Btech in Mechanical engineering</td></tr>
+<hr>
+<table border="2">
+<tr><th>Name</th><th colspan="2">Phone number</th>
+<tr><td>sai kiran</td><td>6300843547</td><td>7095423901</td></tr>
+<tr><td>sai kiran</td><td colspan="2" align="center">6300843547</td></tr>
+
+</table>
+</body>

@@ -1,0 +1,39 @@
+<!doctypehtml>
+<head>
+<title>Objects in Array</title>
+<style>
+table{background-color:yellow;
+border:2px solid red;
+border-collapse:collapse;
+width:500px;}
+td,th{border:2px solid red;}
+tr{align:center;}
+</style>
+</head>
+<body>
+<div id="stds"> </div>
+<button onclick="sl()">click</button>
+<button onclick="sai()">click lists</button>
+<button onclick="saik()">click table</button>
+
+<script>
+var students =[{id:123,name:"sai",place:"hyderabad"},
+{id:124,name:"sai kiran",place:"america"},
+{id:125,name:"shanumuka",place:"Australia"},
+{id:126,name:"steve",place:"banjarahills"},
+{id:123,name:"charan",place:"suraram"}]
+//for(var a=0;a<students.length;a++){console.log(students[a].name+" lives in "+students[a].place);}
+function sl(){data_=" ";
+for(var a=0;a<students.length;a++){data_=data_+"<h1>"+students[a].name+" lives in "+students[a].place+"</h1>"}
+document.getElementById('stds').innerHTML=data_;}
+
+function sai(){data_="<ol>";
+for(var a=0;a<students.length;a++){data_=data_+"<li>"+students[a].name+" lives in "+students[a].place+" And his id "+students[a].id+"</li>"} data_=data_+"</ol>";
+document.getElementById('stds').innerHTML=data_;}
+
+function saik(){data_="<table>"+"<tr>"+"<th>"+"sl no"+"</th>"+"<th>"+"Name"+"</th>"+"<th>"+"place"+"</th>"+
+"<th>"+"Id"+"</th>"+"</tr>";
+for(var a=0;a<students.length;a++){data_=data_+"<tr>"+"<td>"+(a+1)+"</td>"+"<td>"+students[a].name+"</td>"+"<td>"+students[a].place+"</td>"+"<td>"+students[a].id+"</td>"+"</tr>"} data_=data_+"</table>";
+document.getElementById('stds').innerHTML=data_;}
+</script> 
+</body>

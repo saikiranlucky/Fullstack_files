@@ -1,0 +1,17 @@
+<!doctypehtml>
+<html>
+<head> 
+<title>links</title>
+</head>
+<body>
+<h3><mark>To add link ANCHOR<a href=""></a></mark></h3>
+<a href="https://www.amazon.in/"> click to open amazon</a>
+<br>
+<h3><mark> To open link in new tab</mark></h3>
+<a href="https://www.amazon.in/" target="_blank"> click to open amazon</a>
+<br>
+<h3><mark> To open link via image</mark></h3>
+<a href="https://www.amazon.in/" target="_blank">
+<img src="amazon.JPG" height="140px" width="240px">
+</a>
+</body>

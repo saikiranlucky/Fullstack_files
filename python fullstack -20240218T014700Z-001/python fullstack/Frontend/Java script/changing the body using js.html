@@ -1,0 +1,61 @@
+<!doctypehtml>
+<head>
+<title>changing the body in js</title>
+</head>
+<body>
+<h2>hi</h2>
+<h2>hello</h2>
+<h2>hai</h2>
+<h2>namasthe</h2>
+<h2>javascript</h2>
+<button onclick="redtext()">red</button>
+<button onclick="yellowtext()">yellow</button>
+<button onclick="royalbluetext()">royalblue</button>
+<button onclick="pinktext()">pink</button>
+<button onclick="coraltext()">coral</button>
+<hr>
+<h2>TO CHANGE BACK GROUND COLOR</H2>
+<button onclick="red()">red</button>
+<button onclick="yellow()">yellow</button>
+<button onclick="royalblue()">royalblue</button>
+<button onclick="pink()">pink</button>
+<button onclick="coral()">coral</button>
+<hr>
+Enter name of background color : <input type="text" id="bgc"><button onclick="changebgc()">submit</button><br>
+Enter name of color for text : <input type="text" id="tc"><button onclick="changetc()">submit</button>
+<hr>
+slect font-family : <select type="dropdown" id="c1" ><option value="select">select</option><option>arial</option><option>italic</option><option>Times new roman</option><option>Sans Serif</option><br> <button onclick="need()">update</button>
+
+
+
+<script>
+function red(){ var ele=document.body;
+ele.style.backgroundColor = "red";}
+function yellow(){ document.body.style.backgroundColor = "yellow";}
+function royalblue(){ document.body.style.backgroundColor = "royalblue";}
+function pink(){ document.body.style.backgroundColor = "pink";}
+function coral(){ document.body.style.backgroundColor = "coral";}
+
+function redtext(){ var ele=document.body;
+ele.style.color = "red";}
+function yellowtext(){ document.body.style.color = "yellow";}
+function royalbluetext(){ document.body.style.color = "royalblue";}
+function pinktext(){ document.body.style.color = "pink";}
+function coraltext(){ document.body.style.color = "coral";}
+
+function changebgc(){ var bgcolor = document.getElementById("bgc").value;
+var ele = document.body;
+ele.style.backgroundColor = bgcolor;}
+
+function changetc(){ var textcolor = document.getElementById("tc").value;
+var el = document.body;
+el.style.color = textcolor;}
+
+function need(){ var ffamily = document.getElementById("c1").value;
+var font = document.body;
+font.style.fontFamily = ffamily;}
+
+
+</script>
+</body>
+

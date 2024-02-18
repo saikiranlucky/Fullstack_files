@@ -1,0 +1,54 @@
+===================================================================== Reactjs Notes =========================================================================
+Date --- 01.02.2024
+
+REACTJS
+
+This is a framework.Framework is not a programming language and ractjs is also known as javascript library.it is open source.
+
+pre-requirements:
+1.Good with js
+2.Awarness of html,css.
+
+System requirements:
+1.integrated development environment(IDE)
+2.Browser
+3.Nodejs to install(software) ==> 
+How to install nodejs==>www.nodejs.org==> 1st link ==> click on LTS(always go with LTS
+) to download ==> to check weather its downlaod or not open command prompt ==> node-v (to check the version)
+4.Create react-tool to be installed.==>
+npm install -g (create react app)
+ 5. create your first react app
+open location in cmd
+'...create react app your-app(name)
+ 
+
+To Run react application==>
+ go to application folder in cmd
+>npm start(type command name )
+
+
+Features for ract js :
+1.Maintaining the applications
+2.It supports cross-platfrom development 
+3.Single page application 
+4.Performance 
+5.SEO friendly
+6.Testing also easy
+
+package json : project info,dependency info, dep_name:dep_version 
+
+node modules : directory dependencies
+
+src==> we write our own application code 
+multiple based applicatios 
+component based architecture 
+multiple components ==> .js file
+
+index.js==> its a entry port or entry point of the application
+
+Default component : App component =>App.js 
+
+components ===> Data + Logic + View
+
+components :
+src

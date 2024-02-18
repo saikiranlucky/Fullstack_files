@@ -1,0 +1,25 @@
+<html>
+<head><title>Form validation</title></head>
+<header align="center">Form validation</header>
+<body>
+<script>
+function validationform(){
+var user = document.getElementById("person").value;
+var pwd = document.forms['f1']['pswd'].value;
+if(user=="" || user==null || pwd=="" || pwd==null){window.alert("person name and password must be filled."); return false;}
+if(pwd.length<8){alert("password must contain 8 characters.");return false;}
+if(pwd.indexOf('@')==-1 && pwd.indexOf('#')==-1 && pwd.indexOf('$')==-1 && pwd.indexOf('_')==-1){alert("password must contain special character."); return false;}
+if(pwd.indexOf('0')==-1 && pwd.indexOf('1')==-1 && pwd.indexOf('2')==-1 && pwd.indexOf('3')==-1){alert("password must contain one digit number."); return false;}
+
+ }
+
+
+</script>
+
+<form action="changing the body using js.html" name="f1" onsubmit="return validationform()">
+<input type="text" id="person" name="person" placeholder="Enter your name"><p id="abc"></p><br><br>
+<input type="text"  name="pswd" placeholder="Enter your password"><p id="def"></p><br><br>
+<input type="number" name= "mobilenumber" placeholder="Enter your mobile number"><p id="ghi"></p><br><br>
+<input type="submit">
+</body>
+</html>

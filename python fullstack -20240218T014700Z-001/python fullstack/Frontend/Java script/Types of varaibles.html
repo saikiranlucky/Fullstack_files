@@ -1,0 +1,53 @@
+<!doctypehtml>
+<head><title>Types of varaibles</title></head>
+<body>
+<script>
+/*1.var
+declaration and assigning allowed
+var a=20;
+a=30; //(assigning)
+var a="sai"; //(declaration)
+console.log(a);*/
+/*2.let
+declaration not-allowed and assigning allowed
+let a=40;
+a=50; (assigning)
+let a="sai"; (declaration)
+console.log(a); */
+/* 3.const
+declaration  and assigning not-allowed
+const a=40;
+a=50; (assigning)
+const a="sai"; (declaration)
+console.log(a); */
+
+var a = ["ravi","sai","sunny","pradeep"];
+var b = a[3];
+console.log(b);
+//Destructuring array
+ var p1=a[0]; var p2=a[1]; var p3=a[2]; var p4=a[3]; 
+console.log(p1+" "+p2+" "+p3+" "+p4); 
+//new style
+
+ var[first,second,third,forth]=a;
+console.log(first+"::"+second+"::"+third+"::"+forth) 
+
+ var[first,second,,last]=a;
+console.log(first+"::"+second+"::"+last); 
+
+//rest operator(...)
+var[first,second,...other]=a;
+console.log(first+"::"+second+"::"+other);
+
+//object destruction
+var person ={id:12,name_:"sai",designation:"software developer",salary:3000,place:"pune"}
+var{id,name_,designation,salary,place}=person;
+console.log("my name is "+name_+" and my id is "+id+" Am a "+designation+" and my take home salary is "+salary+" my current job location is "+place);
+
+</script>
+<table border="2">
+<tr><th>Properties</th><th>var</th><th>let</th><th>const</th></tr>
+<tr><td>Re-declration</td><td>yes</td><td>no</td><td>no</td></tr>
+<tr><td>Re-assignment</td><td>yes</td><td>yes</td><td>no</td></tr>
+</table>
+</body>

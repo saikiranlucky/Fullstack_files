@@ -1,0 +1,66 @@
+<head> 
+<title>Lists</title>
+</head>
+<body>
+<h3> <mark>Unordered lists</mark> <h3>
+<ul>
+<li>sai kiran</li>
+<li>shannu</li>
+<li>pandu</li>
+</ul> 
+<br>
+<ul type="circle">
+<li>sai kiran</li>
+<li>shannu</li>
+<li>pandu</li>
+</ul> 
+<br>
+<ul type="disc">
+<li>sai kiran</li>
+<li>shannu</li>
+<li>pandu</li>
+</ul> 
+<br>
+<ul type="none">
+<li>sai kiran</li>
+<li>shannu</li>
+<li>pandu</li>
+</ul> 
+<br>
+<ol type="square">
+<li>sai kiran</li>
+<li>shannu</li>
+<li>pandu</li>
+</ol> 
+<hr>
+<h3> <mark>ordered lists </mark> <h3>
+<ol type="i">
+<li>sai kiran</li>
+<li>shannu</li>
+<li>pandu</li>
+</ol> 
+<br>
+<ol type="1">
+<li>sai kiran</li>
+<li>shannu</li>
+<li>pandu</li>
+</ol> 
+<br>
+<ol type="A">
+<li>sai kiran</li>
+<li>shannu</li>
+<li>pandu</li>
+</ol> 
+<br>
+<ol type="a">
+<li>sai kiran</li>
+<li>shannu</li>
+<li>pandu</li>
+</ol> 
+<br>
+<ol type="I">
+<li>sai kiran</li>
+<li>shannu</li>
+<li>pandu</li>
+</ol> 
+</body>

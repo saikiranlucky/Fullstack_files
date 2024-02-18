@@ -1,0 +1,15 @@
+body {background-color:yellow; 
+text-transform:lowercase;
+}
+h3{background-color:red;}
+h3:hover{background-color:lightblue; color:blue;  width:600px; transition: width 2s;}
+form{background-color:lightblue;}
+input[type="text"] {background-color:red;}
+input[type="number"] {background-color:darkred;}
+input[type="date"] {background-color:green;}
+input[type="email"] {background-color:red;}
+input[type="submit"] {background-color:green;}
+
+fieldset{margin:50px 60px; background-color:coral;}
+legend{color:orange; text-align:center;}
+option{background-color:lightgreen; color:blue;}

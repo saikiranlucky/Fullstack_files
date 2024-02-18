@@ -1,0 +1,32 @@
+<!doctypehtml>
+<head>
+<title>loop</title>
+</head>
+<body>
+<script>
+console.log("for loop");
+console.log("order");
+for(var a=1;a<=10;a++)
+{console.log(a);}
+console.log("opposite order");
+for(var a=10;a>=1;a--)
+{console.log(a);}
+//using array
+var n=[1,2,3,4,5,6,7,8,9,10];
+console.log("order");
+for(var a=0;a<n.length;a++)
+{console.log(n[a]);}
+console.log("opposite order");
+var n=[1,2,3,4,5,6,7,8,9,10];
+for(var a=n.length-1;a>=0;a--){console.log(n[a]);}
+//do while loop
+console.log("order");
+var a=1;
+do{console.log(a);a++;} while (a<=10);
+console.log("opposite order");
+var b=10;
+do{console.log(b);a--;} while (a>=1);
+
+</script>
+</body>
+

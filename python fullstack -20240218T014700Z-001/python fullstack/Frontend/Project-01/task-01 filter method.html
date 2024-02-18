@@ -1,0 +1,142 @@
+<!doctypehtml>
+<head>
+<title>
+task-02-deatials of employees
+</title>
+<style>
+table{background-color:yellow;
+border:2px solid red;
+border-collapse:collapse;
+width:500px;}
+td,th{border:2px solid red;}
+</style>
+</head>
+<body>
+
+<script>
+var employees =[{id:123,name:"sai",place:"hyderabad",salary:30000,Role:"Java developer"},
+{id:124,name:"sai kiran",place:"america",salary:40000,Role:"python developer"},
+{id:125,name:"shanumuka",place:"Australia",salary:30000,Role:"Java developer"},
+{id:126,name:"steve",place:"banjarahills",salary:30000,Role:"Reactjs developer"},
+{id:127,name:"charan",place:"suraram",salary:40000,Role:"Java developer"},
+{id:128,name:"lavanya",place:"canada",salary:30000,Role:"python developer"},
+{id:129,name:"alekhya",place:"canada",salary:50000,Role:"Java developer"},
+{id:130,name:"yogitha",place:"canada",salary:40000,Role:"Java developer"},
+{id:131,name:"balu",place:"banglore",salary:50000,Role:"python developer"},
+{id:132,name:"venkyi",place:"banglore",salary:50000,Role:"Java developer"},
+{id:133,name:"bunny",place:"banglore",salary:30000,Role:"Reactjs developer"},
+{id:134,name:"manikanta",place:"banglore",salary:30000,Role:"Java developer"},
+{id:135,name:"sunny",place:"chennai",salary:40000,Role:"Reactjs developer"},
+{id:136,name:"bobby",place:"chennai",salary:30000,Role:"Java developer"},
+{id:137,name:"akhil",place:"pune",salary:50000,Role:"Reactjs developer"},
+{id:138,name:"gopinath",place:"pune",salary:30000,Role:"Java developer"},
+{id:139,name:"vikram",place:"pune",salary:60000,Role:"Java developer"},
+{id:140,name:"surya",place:"hyderabad",salary:70000,Role:"python developer"},];
+
+
+function saik(){ 
+var data_="<table>"+"<tr>"+"<th>"+"sl no"+"</th>"+"<th>"+"Name"+"</th>"+"<th>"+"place"+"</th>"+
+"<th>"+"Id"+"</th>"+"<th>"+"salary"+"</th>"+"<th>"+"Role"+"</th>"+"</tr>";
+var count=0;
+for(var p of employees){
+count++;
+data_=data_+"<tr>"+"<td>"+count+"</td>"+"<td>"+p.name+"</td>"+"<td>"+p.place+"</td>"+"<td>"+p.id+"</td>"+"<td>"+p.salary+"</td>"+"<td>"+p.Role+"</td>"+"</tr>"} data_=data_+"</table>";
+document.getElementById('stds').innerHTML=data_;}
+
+
+
+function withfilter(){
+var city = document.getElementById('place').value;
+var mis = document.getElementById('minsal').value;
+var mas= document.getElementById('maxsal').value;
+var jname = document.getElementById('rle').value;
+    var data_="<table>"+"<tr>"+"<th>"+"sl no"+"</th>"+"<th>"+"Name"+"</th>"+"<th>"+"place"+"</th>"+
+"<th>"+"Id"+"</th>"+"<th>"+"salary"+"</th>"+"<th>"+"Role"+"</th>"+"</tr>";
+var count=0;
+for(p of employees)
+{ 
+//single filter
+    if(city!=""&&mis>=""&&mas<=""&&jname==""){
+if(p.place==city){count++;
+data_=data_+"<tr>"+"<td>"+count+"</td>"+"<td>"+p.name+"</td>"+"<td>"+p.place+"</td>"+"<td>"+p.id+"</td>"+"<td>"+p.salary+"</td>"+"<td>"+p.Role+"</td>"+"</tr>"}
+}
+if(city==""&&mis!=""&&mas<=""&&jname==""){
+if(p.salary>=mis){count++;
+data_=data_+"<tr>"+"<td>"+count+"</td>"+"<td>"+p.name+"</td>"+"<td>"+p.place+"</td>"+"<td>"+p.id+"</td>"+"<td>"+p.salary+"</td>"+"<td>"+p.Role+"</td>"+"</tr>"}
+}
+if(city==""&&mis>=""&&mas!=""&&jname==""){
+if(p.salary<=mas){count++;
+data_=data_+"<tr>"+"<td>"+count+"</td>"+"<td>"+p.name+"</td>"+"<td>"+p.place+"</td>"+"<td>"+p.id+"</td>"+"<td>"+p.salary+"</td>"+"<td>"+p.Role+"</td>"+"</tr>"}
+}
+if(city==""&&mis>=""&&mas<=""&&jname!=""){
+if(p.Role==jname){count++;
+data_=data_+"<tr>"+"<td>"+count+"</td>"+"<td>"+p.name+"</td>"+"<td>"+p.place+"</td>"+"<td>"+p.id+"</td>"+"<td>"+p.salary+"</td>"+"<td>"+p.Role+"</td>"+"</tr>"}
+}
+//double filter
+if(city!=""&&mis>=""&&mas<=""&&jname!=""){
+if(p.place==city&&p.Role==jname){count++;
+data_=data_+"<tr>"+"<td>"+count+"</td>"+"<td>"+p.name+"</td>"+"<td>"+p.place+"</td>"+"<td>"+p.id+"</td>"+"<td>"+p.salary+"</td>"+"<td>"+p.Role+"</td>"+"</tr>"}
+}
+if(city!=""&&mis!=""&&mas<=""&&jname==""){
+if(p.place==city&&p.salary>=mis){count++;
+data_=data_+"<tr>"+"<td>"+count+"</td>"+"<td>"+p.name+"</td>"+"<td>"+p.place+"</td>"+"<td>"+p.id+"</td>"+"<td>"+p.salary+"</td>"+"<td>"+p.Role+"</td>"+"</tr>"}
+}
+if(city!=""&&mis>=""&&mas!=""&&jname==""){
+if(p.place==city&&p.salary<=mas){count++;
+data_=data_+"<tr>"+"<td>"+count+"</td>"+"<td>"+p.name+"</td>"+"<td>"+p.place+"</td>"+"<td>"+p.id+"</td>"+"<td>"+p.salary+"</td>"+"<td>"+p.Role+"</td>"+"</tr>"}
+}
+if(city==""&&mis!=""&&mas!=""&&jname==""){
+if(p.salary<=mas&&p.salary>=mis){count++;
+data_=data_+"<tr>"+"<td>"+count+"</td>"+"<td>"+p.name+"</td>"+"<td>"+p.place+"</td>"+"<td>"+p.id+"</td>"+"<td>"+p.salary+"</td>"+"<td>"+p.Role+"</td>"+"</tr>"}
+}
+if(city==""&&mis!=""&&mas==""&&jname!=""){
+if(p.salary>=mis&&p.Role==jname){count++;
+data_=data_+"<tr>"+"<td>"+count+"</td>"+"<td>"+p.name+"</td>"+"<td>"+p.place+"</td>"+"<td>"+p.id+"</td>"+"<td>"+p.salary+"</td>"+"<td>"+p.Role+"</td>"+"</tr>"}
+}
+if(city==""&&mis==""&&mas!=""&&jname!=""){
+if(p.salary<=mas&&p.Role==jname){count++;
+data_=data_+"<tr>"+"<td>"+count+"</td>"+"<td>"+p.name+"</td>"+"<td>"+p.place+"</td>"+"<td>"+p.id+"</td>"+"<td>"+p.salary+"</td>"+"<td>"+p.Role+"</td>"+"</tr>"}
+}
+//Triple filter
+if(city==""&&mis!=""&&mas!=""&&jname!=""){
+if(p.salary<=mas&&p.salary>=mis&&p.Role==jname){count++;
+data_=data_+"<tr>"+"<td>"+count+"</td>"+"<td>"+p.name+"</td>"+"<td>"+p.place+"</td>"+"<td>"+p.id+"</td>"+"<td>"+p.salary+"</td>"+"<td>"+p.Role+"</td>"+"</tr>"}
+}
+if(city!=""&&mis!=""&&mas!=""&&jname==""){
+if(p.salary<=mas&&p.salary>=mis&&p.place==city){count++;
+data_=data_+"<tr>"+"<td>"+count+"</td>"+"<td>"+p.name+"</td>"+"<td>"+p.place+"</td>"+"<td>"+p.id+"</td>"+"<td>"+p.salary+"</td>"+"<td>"+p.Role+"</td>"+"</tr>"}
+}
+//all four filters
+
+if(city!=""&&mis!=""&&mas!=""&&jname!=""){
+if(p.salary<=mas&&p.salary>=mis&&p.place==city&&p.Role==jname){count++;
+data_=data_+"<tr>"+"<td>"+count+"</td>"+"<td>"+p.name+"</td>"+"<td>"+p.place+"</td>"+"<td>"+p.id+"</td>"+"<td>"+p.salary+"</td>"+"<td>"+p.Role+"</td>"+"</tr>"}
+}
+}data_=data_+"</table>";
+document.getElementById('stds').innerHTML=data_;}
+
+</script>
+//onclick event 
+ <button onclick="saik()">click table</button>
+<!-- place<input type="text" id="place"> 
+minimum salary<input type="text" id="minsal"> 
+maximun salary<input type="text" id="maxsal"> 
+Role<select id="rle">
+<option value="">select technology</option>
+<option value="Java developer">java</option>
+<option value="python developer">python</option>
+<option value="Reactjs developer">React</option>
+</select>
+<button onclick="withfilter()">Filter</button> -->
+//onchange event
+place<input type="text" id="place" onchange="withfilter()"> 
+minimum salary<input type="text" id="minsal" onchange="withfilter()"> 
+maximun salary<input type="text" id="maxsal" onchange="withfilter()"> 
+Role<select id="rle" onchange="withfilter()">
+<option value="">select technology</option>
+<option value="Java developer">java</option>
+<option value="python developer">python</option>
+<option value="Reactjs developer">React</option>
+</select>
+<div id="stds"> </div>
+</body>

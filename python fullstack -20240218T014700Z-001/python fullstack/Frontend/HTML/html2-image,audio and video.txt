@@ -1,0 +1,24 @@
+<!doctypehtml>
+<head>
+<title> sample for image and video </title>
+</head>
+<body>
+<h3> <mark> For inserting image from website </mark> </h3>
+<img src="https://cdn.britannica.com/55/2155-050-604F5A4A/lion.jpg" height="240px" width="240px">
+<hr>
+<h3> <mark> same folder of the computer of your webpage </mark> </h3>
+<img src="lion.JPG" height="320px width="340px">
+<hr>
+<h3> <mark> other folder of your computer </mark> </h3>
+<img src="C:/Users/Sai Kiran/OneDrive/Desktop/sai/black panther.JPG" height="240px" width="240px">
+<hr>
+<h2><mark> Adding the audio clip </mark></h2>
+<audio controls="on">
+<source src="animal.MP3" type="audio/mp3"></source>
+</audio>
+<hr>
+<h2><mark>adding video to webpage</mark></h2>
+<video controls height="340px" width="340px">
+<source src="orange.nenu.MP4" type="video/mp4"></source>
+</video>
+</body>
